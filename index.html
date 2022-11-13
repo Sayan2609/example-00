@@ -1,13 +1,78 @@
-<doctype html>
-  <html>
-    <head>
-      <title>test heroku</title>
-      <script src="https://cdn.tailwindcss.com"></script>
+<!DOCTYPE html>
+<html>
 
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4792310339962078" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sayan Ghosh | Full-Stack Web Developer</title>
 
-    </head>
-    <body class='flex items-center justify-center bg-slate-700'>
-      <h1 class='text-bold text-5xl text-gray-50'>HELLO WORLD!</h1>
-    </body>
-  </html>
+  <link rel="stylesheet" href="style.css"> <!--  Including Style  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--  Including Google Fonts for Icons-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4792310339962078" crossorigin="anonymous"></script><!-- Including Google AdSense -->
+  <script src="https://cdn.tailwindcss.com"></script> <!--  Including Tailwind CSS  -->
+  
+</head>
+
+<body class="h-[100%] bg-dark-1 dark:text-white" style="color:white;">
+
+  <header class="sticky top-0 flex items-center justify-between w-full h-14">
+  
+   <a href="https://tailwindcss.com/docs" class="text-2xl ml-4">Sayan Ghosh</a>
+  
+    <ul id="nav" class="glass flex flex-col fixed top-16 right-[-50vw] w-[50vw] h-96 p-12 text-xl
+      sm:flex-row sm:items-center sm:relative sm:top-0 sm:right-0 sm:w-fit sm:h-14 sm:p-0 sm:pb-6">
+      <li class="relative pb-1 mt-6 sm:mx-2 md:mx-6"><a href="/main.html">    Home    </a></li>
+      <li class="relative pb-1 mt-6 sm:mx-2 md:mx-6"><a href="/about.html">   About   </a></li>
+      <li class="relative pb-1 mt-6 sm:mx-2 md:mx-6"><a href="/services.html">Services</a></li>
+      <li class="relative pb-1 mt-6 sm:mx-2 md:mx-6"><a href="/blog.html">    Blog    </a></li>
+      <li class="relative pb-1 mt-6 sm:mx-2 md:mx-6"><a href="/contact.html"> Contact </a></li>
+    </ul>
+  
+    <div class="flex mr-4">
+  
+      <form id="search-form" class="hidden md:flex fixed md:absolute top-14 right-16 sm:right-4 animate">
+  
+        <input id="search-inpu6" class="rounded-l-2xl text-gray-900 px-4" type="text" placeholder="Search here">
+  
+        <button class="material-symbols-rounded text-4xl rounded-r-2xl p-1 bg-gray-200 text-[#130f40]" id="search-btn" type="button" onclick="search()">search</button>
+  
+      </form>
+  
+      <label id="search-opener" onclick="openSearch()" class="material-symbols-rounded text-4xl md:hidden">search</label>
+  
+      <span class="material-symbols-rounded text-4xl pl-2 sm:hidden" onclick="menu()">menu</span>
+  
+    </div>
+  </header>
+
+
+  <section class="flex flex-col sm:flex-row sm:justify-between w-full sm:h-[75vh] items-center mt-8 sm:mt-0">
+    
+    <div class="flex flex-col justify-center sm:w-[65vw] px-10">
+     
+      <p>— Hello</p>
+      
+      <p class="text-3xl mt-4">I'm a <span id="auto-text">Web Dev</span></p>
+      <p class="text-4xl my-4 underline">Sayan Ghosh</p>
+      
+      <p>This is <span>Sayan Ghosh</span> Web developer, App developer and UI/UX Designer ocated in India, looking for work around the globe.</p>
+      
+      <button class="text-md w-24 bg-blue-600 hover:bg-blue-800 rounded-lg py-2 mt-4"><a href="/hire">HIRE ME</a></button>
+      
+    </div>
+    
+    <div class="flex w0 sm:h4 sm:w-fll">
+      <img src="img/me.png" class="w-60 sm:w-96">
+    </div>
+    
+  </section>
+  
+  <hr class="m-8"/>
+  
+  <section>
+  <div class="text-white text-4xl px-4">Trade involves the transfer of goods and services from one person or entity to another, often in exchange for money. Economists refer to a system or network that allows trade as a market.<br/> An early form of trade, the Gift economy, saw the exchange of goods and services without an explicit agreement for immediate or future rewards. A gift economy involves trading things without the use of money. Modern traders generally negotiate through a medium of exchange, such as money. As a result, buying can be separated from selling, or earning. The invention of money (and letter of credit, paper money and non-physical money) greatly simplified and promoted trade. Trade between two traders is called bilateral trade, while trade involving more than two traders is called multilateral trade. <br/>In one modern view, trade exists due to specialization and the division of labor, a predominant form of economic activity in which individuals and groups concentrate on a small aspect of production, but use their output in trades for other products and needs.[1] Trade exists between regions because different regions may have a omparative advantage (perceived or real) in the production of some trade-able commodity—including production of natural resources scarce or limited elsewhere. For example: different regions' sizes may encourage mass production.<br/> In such circumstances, trade at market prices between locations can benefit both locations. Different types of traders may specialize in trading different kinds of goods; for example, the spice trade and grain trade have both historically been important in the development of a global, international economy.</div>
+  </section>
+  
+  <script src="script.js"></script> <!--  Including JavaScript  -->
+</body>
+</html>
